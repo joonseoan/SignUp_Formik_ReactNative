@@ -1,8 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View, AppRegistry } from 'react-native';
 
+import Header from './src/components/Header';
+import InputControl from './src/components/InputControl';
+// import Inputs from './src/components/Inputs';
+import Button from './src/components/Button'
+
 export default () => {
-  return(<View style={styles.container} ><Text>DDDD</Text></View>);
+  // return(<View style={styles.container} ><Text>DDDD</Text></View>);
+  return (
+    <View style={{ flex: 1 }}>
+      <Header />
+      <InputControl />
+      <Button />
+    </View>
+  );
 };
 
 // AppRegistry.registerComponent('authentication', () => App);
